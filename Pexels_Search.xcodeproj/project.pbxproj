@@ -13,6 +13,10 @@
 		0EB29D882C5C702900F1F927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB29D872C5C702900F1F927 /* Assets.xcassets */; };
 		0EB29D8B2C5C702900F1F927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB29D892C5C702900F1F927 /* LaunchScreen.storyboard */; };
 		0EB29D952C5C798800F1F927 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB29D942C5C798800F1F927 /* Constants.swift */; };
+		0EB29D982C5C88A500F1F927 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB29D972C5C88A500F1F927 /* AlamofireManager.swift */; };
+		0EB29D9A2C5C890500F1F927 /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB29D992C5C890500F1F927 /* BaseInterceptor.swift */; };
+		0EDF94EB2C5CB3270052FE64 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDF94EA2C5CB3270052FE64 /* Logger.swift */; };
+		0EDF94ED2C5CB5E50052FE64 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDF94EC2C5CB5E50052FE64 /* SearchRouter.swift */; };
 		CD522798F8D459CFFD27F57E /* Pods_Pexels_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303C8F214D085E4FE35C04E /* Pods_Pexels_Search.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		0EB29D8A2C5C702900F1F927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EB29D8C2C5C702900F1F927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EB29D942C5C798800F1F927 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0EB29D972C5C88A500F1F927 /* AlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
+		0EB29D992C5C890500F1F927 /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
+		0EDF94EA2C5CB3270052FE64 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		0EDF94EC2C5CB5E50052FE64 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
 		53F2923EBA3A7932D9676D13 /* Pods-Pexels_Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pexels_Search.release.xcconfig"; path = "Target Support Files/Pods-Pexels_Search/Pods-Pexels_Search.release.xcconfig"; sourceTree = "<group>"; };
 		B1DB9C54475683D526EC2FA8 /* Pods-Pexels_Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pexels_Search.debug.xcconfig"; path = "Target Support Files/Pods-Pexels_Search/Pods-Pexels_Search.debug.xcconfig"; sourceTree = "<group>"; };
 		C303C8F214D085E4FE35C04E /* Pods_Pexels_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pexels_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +79,7 @@
 		0EB29D7D2C5C702800F1F927 /* Pexels_Search */ = {
 			isa = PBXGroup;
 			children = (
+				0EB29D962C5C889700F1F927 /* API */,
 				0EB29D932C5C795900F1F927 /* Utility */,
 				0EB29D7E2C5C702800F1F927 /* AppDelegate.swift */,
 				0EB29D802C5C702800F1F927 /* SceneDelegate.swift */,
@@ -88,6 +97,17 @@
 				0EB29D942C5C798800F1F927 /* Constants.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		0EB29D962C5C889700F1F927 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0EB29D972C5C88A500F1F927 /* AlamofireManager.swift */,
+				0EB29D992C5C890500F1F927 /* BaseInterceptor.swift */,
+				0EDF94EA2C5CB3270052FE64 /* Logger.swift */,
+				0EDF94EC2C5CB5E50052FE64 /* SearchRouter.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		3C00F362225D4834B076FCDE /* Pods */ = {
@@ -215,7 +235,11 @@
 			files = (
 				0EB29D832C5C702800F1F927 /* ViewController.swift in Sources */,
 				0EB29D7F2C5C702800F1F927 /* AppDelegate.swift in Sources */,
+				0EB29D9A2C5C890500F1F927 /* BaseInterceptor.swift in Sources */,
 				0EB29D812C5C702800F1F927 /* SceneDelegate.swift in Sources */,
+				0EDF94EB2C5CB3270052FE64 /* Logger.swift in Sources */,
+				0EB29D982C5C88A500F1F927 /* AlamofireManager.swift in Sources */,
+				0EDF94ED2C5CB5E50052FE64 /* SearchRouter.swift in Sources */,
 				0EB29D952C5C798800F1F927 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

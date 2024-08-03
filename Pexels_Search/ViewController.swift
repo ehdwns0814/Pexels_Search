@@ -6,12 +6,19 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .green
+        AlamofireManager
+            .shared
+            .session
+            .request(SearchRouter.searchCurated)
+            .responseJSON(completionHandler: { response in
+                debugPrint(response)
+            })
     }
 }
