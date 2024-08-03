@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5C59F22C5E150B004DFBEF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5C59F12C5E150B004DFBEF /* Photo.swift */; };
+		0E5C59F52C5E1BD7004DFBEF /* Photographer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5C59F42C5E1BD7004DFBEF /* Photographer.swift */; };
+		0E5C59F72C5E1CA1004DFBEF /* ImageURLSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5C59F62C5E1CA1004DFBEF /* ImageURLSet.swift */; };
+		0E5C59FA2C5E1F5F004DFBEF /* PhotoBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5C59F92C5E1F5F004DFBEF /* PhotoBundle.swift */; };
 		0EB29D7F2C5C702800F1F927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB29D7E2C5C702800F1F927 /* AppDelegate.swift */; };
 		0EB29D812C5C702800F1F927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB29D802C5C702800F1F927 /* SceneDelegate.swift */; };
 		0EB29D832C5C702800F1F927 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB29D822C5C702800F1F927 /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E5C59F12C5E150B004DFBEF /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		0E5C59F42C5E1BD7004DFBEF /* Photographer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photographer.swift; sourceTree = "<group>"; };
+		0E5C59F62C5E1CA1004DFBEF /* ImageURLSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLSet.swift; sourceTree = "<group>"; };
+		0E5C59F92C5E1F5F004DFBEF /* PhotoBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBundle.swift; sourceTree = "<group>"; };
 		0EB29D7B2C5C702800F1F927 /* Pexels_Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pexels_Search.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB29D7E2C5C702800F1F927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EB29D802C5C702800F1F927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +66,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0E5C59F02C5E1393004DFBEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E5C59F92C5E1F5F004DFBEF /* PhotoBundle.swift */,
+				0E5C59F12C5E150B004DFBEF /* Photo.swift */,
+				0E5C59F42C5E1BD7004DFBEF /* Photographer.swift */,
+				0E5C59F62C5E1CA1004DFBEF /* ImageURLSet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0EB29D722C5C702800F1F927 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +98,7 @@
 		0EB29D7D2C5C702800F1F927 /* Pexels_Search */ = {
 			isa = PBXGroup;
 			children = (
+				0E5C59F02C5E1393004DFBEF /* Model */,
 				0EB29D962C5C889700F1F927 /* API */,
 				0EB29D932C5C795900F1F927 /* Utility */,
 				0EB29D7E2C5C702800F1F927 /* AppDelegate.swift */,
@@ -233,13 +253,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5C59FA2C5E1F5F004DFBEF /* PhotoBundle.swift in Sources */,
 				0EB29D832C5C702800F1F927 /* ViewController.swift in Sources */,
 				0EB29D7F2C5C702800F1F927 /* AppDelegate.swift in Sources */,
 				0EB29D9A2C5C890500F1F927 /* BaseInterceptor.swift in Sources */,
 				0EB29D812C5C702800F1F927 /* SceneDelegate.swift in Sources */,
 				0EDF94EB2C5CB3270052FE64 /* Logger.swift in Sources */,
 				0EB29D982C5C88A500F1F927 /* AlamofireManager.swift in Sources */,
+				0E5C59F22C5E150B004DFBEF /* Photo.swift in Sources */,
 				0EDF94ED2C5CB5E50052FE64 /* SearchRouter.swift in Sources */,
+				0E5C59F52C5E1BD7004DFBEF /* Photographer.swift in Sources */,
+				0E5C59F72C5E1CA1004DFBEF /* ImageURLSet.swift in Sources */,
 				0EB29D952C5C798800F1F927 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
