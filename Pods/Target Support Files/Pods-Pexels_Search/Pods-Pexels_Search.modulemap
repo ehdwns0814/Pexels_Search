@@ -1,0 +1,6 @@
+framework module Pods_Pexels_Search {
+  umbrella header "Pods-Pexels_Search-umbrella.h"
+
+  export *
+  module * { export * }
+}
